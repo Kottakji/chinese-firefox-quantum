@@ -63,7 +63,11 @@ var ppcMain = {
 	_onTabSelect: function(tabId) {
 
 		if ((this.enabled == 1))
-			chrome.tabs.sendRequest(tabId, {"type":"enable", "config":ppcMain.config});
+			try {
+				browser.tabs.sendMessage(tabId, {"type":"enable", "config":ppcMain.config});
+			} catch (error) {
+				console.log(error);
+			}
 	},
 
 	miniHelp:
@@ -87,12 +91,21 @@ var ppcMain = {
 		}
 		
 		// Send message to current tab to add listeners and create stuff
-		chrome.tabs.sendRequest(tab.id, {"type":"enable", "config":ppcMain.config});
+		try {
+			browser.tabs.sendMessage(tab.id, {"type":"enable", "config":ppcMain.config});
+		} catch (error) {
+			console.log(error);
+		}
+
 		this.enabled = 1;
 		
 		if(mode == 1) {
-			chrome.tabs.sendRequest(tab.id, {"type":"showPopup", "text":ppcMain.miniHelp});
-		} 
+			try {
+				browser.tabs.sendMessage(tab.id, {"type":"showPopup", "text":ppcMain.miniHelp});
+			} catch (error) {
+				console.log(error);
+			}
+		}
 		chrome.browserAction.setIcon({"path":"images/toolbar-enabled.png"});
 		// chrome.browserAction.setBadgeBackgroundColor({"color":[255,0,0,255]});
 		// chrome.browserAction.setBadgeText({"text":"On"});
@@ -114,7 +127,11 @@ var ppcMain = {
 				for (var i =0; i < windows.length; ++i) {
 					var tabs = windows[i].tabs;
 					for ( var j = 0; j < tabs.length; ++j) {
-						chrome.tabs.sendRequest(tabs[j].id, {"type":"disable"});
+						try {
+							browser.tabs.sendMessage(tabs[j].id, {"type":"disable"});
+						} catch (error) {
+							console.log(error);
+						}
 					}
 				}
 			});
@@ -143,7 +160,7 @@ var ppcMain = {
 			if (e) break;
 			showMode = (showMode + 1) % this.dictCount;
 		} while (showMode != m);
-		
+
 		return e;
 	}
 };

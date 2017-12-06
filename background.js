@@ -1,6 +1,6 @@
 chrome.browserAction.onClicked.addListener(ppcMain.inlineToggle);
-chrome.tabs.onSelectionChanged.addListener(ppcMain.onTabSelect);
-chrome.extension.onRequest.addListener(
+chrome.tabs.onActivated.addListener(ppcMain.onTabSelect);
+chrome.runtime.onMessage.addListener(
 	function(request, sender, response) {
 		switch(request.type) {
 			case 'enable?':
@@ -8,17 +8,14 @@ chrome.extension.onRequest.addListener(
 				ppcMain.onTabSelect(sender.tab.id);
 				break;
 			case 'xsearch':
-				console.log('xsearch');
 				var e = ppcMain.search(request.text, request.showmode);
 				response(e);
 				break;
-			case 'translate':
-				console.log('translate');
-				var e = ppcMain.dict.translate(request.title);
-				response(e);
-				break;
+			//case 'translate':  # What is the use of this function?
+			//	var e = ppcMain.dict.translate(request.title);
+			//	response(e);
+			//	break;
 			case 'makehtml':
-				console.log('makehtml');
 				var html = ppcMain.dict.makeHtml(request.entry);
 				response(html);
 				break;

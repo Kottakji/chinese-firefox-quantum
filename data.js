@@ -89,7 +89,7 @@ ppcDict.prototype = {
 		var indexString;
 		var hanzisep = "\u30FB";
 		var indexsep = "\uFF1A";
-		
+
 		//find all hits for traditional characters
 		hit = book.indexOf( "\n" + word + hanzisep);
 		while (hit != -1) {
@@ -120,21 +120,23 @@ ppcDict.prototype = {
 		
 		var entryobj = {};
 		entryobj.data = [];
-		
+
 		var rawentries = [];
 		while (word.length > 0) {
 			//hits = start of the lines in the dict where the entries are
 		    var hits = this.indexSearch(this.wordIndex, word);
-		    
+
 			for (i = 0; i < hits.length; i++) {
-				var end = this.wordDict.indexOf("\n", hits[i]) - 1;
-				var entryline = this.wordDict.substr(hits[i], end - hits[i]);
+
+                var end = this.wordDict.indexOf("\n", hits[i]);
+				var entryline = this.wordDict.substr(hits[i], end - (hits[i]));
+
 				rawentries.push(entryline);
 			}
 			word = word.substr(0, word.length - 1);
 		}
 
-		entryobj.matchLen = 0;		
+		entryobj.matchLen = 0;
 		for (i = 0; i < rawentries.length; i++) {
 			//set highlight length to longest match
 			var hanziLen = rawentries[i].indexOf(" ");
@@ -143,6 +145,7 @@ ppcDict.prototype = {
 			
 			entryobj.data.push([rawentries[i], null]);
 		}
+
 		return entryobj;
     },
 
@@ -166,8 +169,7 @@ ppcDict.prototype = {
 	
 	makeHtml: function(entry) {
 		var e; 
-		var k;
-		
+
 		var trad, simp, pinyin, def;
 		var i, j, k;
 		
@@ -180,6 +182,7 @@ ppcDict.prototype = {
 
 		for (i = 0; i < entry.data.length; ++i) {
 			e = entry.data[i][0].match(/^(.+?)\s+(?:\[(.*?)\])?\s*\/(.+)\//);
+
 			if (!e) continue;
 
 			trad = e[1].split(" ")[0];
