@@ -43,6 +43,9 @@ var ppcContent = {
 
     dictCount: 2,
     altView: 0,
+    selEndList: [],
+    lastSelEnd: [],
+    lastRo: 0,
 
     //Adds the listeners and stuff.
     enableTab: function () {
@@ -460,7 +463,7 @@ var ppcContent = {
         var nextNode;
 
         if ((nextNode = node.nextSibling) != null)
-            return nextNode
+            return nextNode;
         if (((nextNode = node.parentNode) != null) && this.isInline(nextNode))
             return this.getNext(nextNode);
 
@@ -489,11 +492,6 @@ var ppcContent = {
 
         return text;
     },
-
-    // Hack because SelEnd can't be sent in messages
-    lastSelEnd: [],
-    // Hack because ro was coming out always 0 for some reason.
-    lastRo: 0,
 
     show: function (tdata) {
         var rp = tdata.prevRangeNode;
@@ -529,12 +527,14 @@ var ppcContent = {
             this.hidePopup();
             return -2;
         }
-        //selection end data
-        var selEndList = [];
-        var text = this.getTextFromRange(rp, ro, selEndList, 13 /*maxlength*/);
 
-        var lastSelEnd = selEndList;
-        var lastRo = ro;
+        //selection end data
+        this.selEndList = [];
+        var text = this.getTextFromRange(rp, ro, this.selEndList, 13 /*maxlength*/);
+
+        this.lastSelEnd = this.selEndList;
+        this.lastRo = ro;
+
         chrome.runtime.sendMessage({"type": "xsearch", "text": text, "showmode": this.showMode},
             ppcContent.processEntry);
 
@@ -550,8 +550,8 @@ var ppcContent = {
 
     processEntry: function (e) {
         var tdata = window.cperapera;
-        var ro = this.lastRo;
-        var selEndList = this.lastSelEnd;
+        var ro = this.ppcContent.lastRo;
+        var selEndList = this.ppcContent.lastSelEnd;
 
         if (!e) {
             ppcContent.hidePopup();
@@ -605,8 +605,10 @@ var ppcContent = {
         range.setEnd(selEnd.node, offset);
 
         var sel = doc.defaultView.getSelection();
-        if ((!sel.isCollapsed) && (tdata.selText != sel.toString()))
+        if ((!sel.isCollapsed) && (tdata.selText != sel.toString())) {
             return;
+        }
+
         sel.removeAllRanges();
         sel.addRange(range);
         tdata.selText = sel.toString();
