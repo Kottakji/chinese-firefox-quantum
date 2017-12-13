@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85a00258-fef6-4d3f-9883-aea2e2c9425a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cperacontent.js" afterPath="$PROJECT_DIR$/cperacontent.js" />
+      <change beforePath="$PROJECT_DIR$/web-ext-artifacts/perapera_chinese_popup_dictionary-2.0.zip" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cperacontent.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cperacontent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cperacontent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
               <caret line="668" column="25" lean-forward="false" selection-start-line="668" selection-start-column="14" selection-end-line="668" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,6 +115,7 @@
         <option value="$PROJECT_DIR$/background.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/cperacontent.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -220,11 +231,6 @@
             <path>
               <item name="chinese-chrome" type="b2602c69:ProjectViewProjectNode" />
               <item name="chinese-chrome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chinese-chrome" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chinese-chrome" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -547,6 +553,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="668" column="25" lean-forward="false" selection-start-line="668" selection-start-column="14" selection-end-line="668" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
