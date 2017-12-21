@@ -31,7 +31,8 @@ if(initStorage("v0.9", true)) {
 	initStorage("docolors", "yes");
 	initStorage("showhanzi", "boths");
 	initStorage("pinyin", "tonemarks");
-	
+	initStorage("dialect", "mandarin");
+
 	// v0.8
 	// No changes to options
 }
@@ -60,3 +61,4 @@ ppcMain.config.highlight = localStorage["highlight"];
 ppcMain.config.showhanzi = localStorage["showhanzi"];
 ppcMain.config.docolors = localStorage["docolors"];
 ppcMain.config.pinyin = localStorage["pinyin"];
+ppcMain.config.dialect = localStorage["dialect"];

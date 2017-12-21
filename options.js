@@ -31,6 +31,14 @@ function onLoaded() {
             }
         }
 
+        store = localStorage['dialect'];
+        for (var i = 0; i < document.optform.dialect.length; ++i) {
+            if (document.optform.dialect[i].value == store) {
+                document.optform.dialect[i].selected = true;
+                break;
+            }
+        }
+
         store = localStorage['docolors'];
         if (store == 'yes') {
             document.optform.docolors[0].selected = true;
@@ -45,12 +53,14 @@ function onLoaded() {
         localStorage['pinyin'] = document.optform.pinyin.value;
         localStorage['docolors'] = document.optform.docolors.value;
         localStorage['showhanzi'] = document.optform.showhanzi.value;
+        localStorage['dialect'] = document.optform.dialect.value;
 
         chrome.extension.getBackgroundPage().ppcMain.config.css = localStorage["popupcolor"];
         chrome.extension.getBackgroundPage().ppcMain.config.highlight = localStorage["highlight"];
         chrome.extension.getBackgroundPage().ppcMain.config.pinyin = localStorage["pinyin"];
         chrome.extension.getBackgroundPage().ppcMain.config.docolors = localStorage["docolors"];
         chrome.extension.getBackgroundPage().ppcMain.config.showhanzi = localStorage["showhanzi"];
+        chrome.extension.getBackgroundPage().ppcMain.config.dialect = localStorage["dialect"];
     }
 
     document.getElementById('optform').onsubmit = function (e) {
@@ -59,6 +69,24 @@ function onLoaded() {
     };
 
     fillVals();
+
+
+    // Mandarin or Cantonese
+    var dialect = document.getElementById('dialect');
+    dialect.addEventListener('change', function (e) {
+        displayShowHanzi(e.target.value)
+    });
+
+    displayShowHanzi(dialect.options[dialect.selectedIndex].value);
+
+    function displayShowHanzi (value) {
+        if (value === 'cantonese') {
+            document.getElementById('showhanzi-div').style.display = 'none';
+        } else {
+            document.getElementById('showhanzi-div').style.display = 'block';
+        }
+    }
+
 }
 
 if (window.addEventListener) {
@@ -66,4 +94,3 @@ if (window.addEventListener) {
 } else {
     window.attachEvent('onload', onLoaded);
 }
-

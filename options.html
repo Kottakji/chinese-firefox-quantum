@@ -1,55 +1,63 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/options.css" />
-	<script src="/options.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/options.css"/>
+    <script src="/options.js"></script>
 </head>
-	<body>
-		<div id="rikaikun_options">
-			<div id="tabs">
-				<div id="general" class="tab active-tab">General</div>
-			<div id="options">
-				<form id="optform" name="optform">
-					<div id="gencon">
-						<p>Popup Theme:
-							<select id="popupcolor" name="popupcolor">
-								<option value="charcoal">Charcoal</option>
-								<option value="paper">Paper</option>
-								<option value="sepia">Sepia</option>
-							</select>
-							(Restart Required)
-							<br />
-							Highlight text?
-							<select id="highlighttext" name="highlighttext">
-								<option value="yes">Yes</option>
-								<option value="no">No</option>
-							</select>
-							<br />
-							Pronunciation:
-							<select id="pinyin" name="pinyin">
-								<option value="tonemarks">Tone Marks</option>
-								<option value="tonenums">Tone Numbers</option>
-								<option value="zhuyin">Zhuyin</option>
-							</select>
-							<br />
-							Show Tone Colors?
-							<select id="docolors" name="docolors">
-								<option value="yes">Yes</option>
-								<option value="no">No</option>
-							</select>
-							<br />
-							Hanzi Setting:
-							<select id="showhanzi" name="showhanzi">
-								<option value="simp">Simplified</option>
-								<option value="trad">Traditional</option>
-								<option value="boths">Simp, Trad</option>
-								<option value="botht">Trad, Simp</option>
+<body>
+<div id="rikaikun_options">
+    <div id="tabs">
+        <div id="general" class="tab active-tab">General</div>
+        <div id="options">
+            <form id="optform" name="optform">
+                <div id="gencon">
+                    <p>Popup Theme:
+                        <select id="popupcolor" name="popupcolor">
+                            <option value="charcoal">Charcoal</option>
+                            <option value="paper">Paper</option>
+                            <option value="sepia">Sepia</option>
+                        </select>
+                        (Restart Required)
+                        <br/>
+                        Highlight text?
+                        <select id="highlighttext" name="highlighttext">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <br/>
+                        Pronunciation:
+                        <select id="pinyin" name="pinyin">
+                            <option value="tonemarks">Tone Marks</option>
+                            <option value="tonenums">Tone Numbers</option>
+                            <option value="zhuyin">Zhuyin</option>
+                        </select>
+                        <br/>
+                        Show Tone Colors?
+                        <select id="docolors" name="docolors">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <br/>
+                        Dialect
+                        <select id="dialect" name="dialect">
+                            <option value="mandarin">Mandarin</option>
+                            <option value="cantonese">Cantonese</option>
+                        </select>
+                        <br/>
+                    <div id="showhanzi-div">
+                        Hanzi Setting:
+                        <select id="showhanzi" name="showhanzi">
+                            <option value="simp">Simplified</option>
+                            <option value="trad">Traditional</option>
+                            <option value="boths">Simp, Trad</option>
+                            <option value="botht">Trad, Simp</option>
 
-							</select>
-							</p>
-						<p><input type="submit" value="Submit"/></p>
-					</div>
-				</form>
-			</div>
-		</div>
-	</body>
+                        </select>
+                    </div>
+                    </p>
+                    <p><input type="submit" value="Submit"/></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
