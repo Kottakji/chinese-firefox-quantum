@@ -66,6 +66,10 @@ function onLoaded() {
     document.getElementById('optform').onsubmit = function (e) {
         e.preventDefault();
         getVals();
+
+        // Reload the dictionary
+        chrome.extension.getBackgroundPage().ppcMain.dict = false;
+        chrome.extension.getBackgroundPage().ppcMain.loadDictionary();
     };
 
     fillVals();

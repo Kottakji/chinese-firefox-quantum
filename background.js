@@ -19,6 +19,12 @@ chrome.runtime.onMessage.addListener(
 				var html = ppcMain.dict.makeHtml(request.entry);
 				response(html);
 				break;
+			case 'reloadxsearch':
+				// If the user changes from mandarin to cantonese, we need to reload the dictionary
+				ppcMain.loadDictionary();
+				var e = ppcMain.search(request.text, request.showmode);
+				response(e);
+				break;
 			default:
 				console.log(request);
 		}

@@ -5,6 +5,7 @@ def merge_canton_dict():
     """
     After creating the cantonese dictionary, many entries are missing.
     Therefore, for each word in the mandarin dict that isn't in the cantonese dict, add it
+    Note: this takes a few hours
     :return:
     """
     final = open('data/cantonese/final.dat', 'w')
@@ -52,4 +53,5 @@ def merge_canton_dict():
 
     final.close()
 
-merge_canton_dict()
+
+# merge_canton_dict()

@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a00258-fef6-4d3f-9883-aea2e2c9425a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/create-canton-data.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cantonese/dict-backup.dat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cantonese/final.dat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/cantonese/new-dict.dat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/merge-canton-dict.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/background.js" afterPath="$PROJECT_DIR$/background.js" />
+      <change beforePath="$PROJECT_DIR$/cperacontent.js" afterPath="$PROJECT_DIR$/cperacontent.js" />
+      <change beforePath="$PROJECT_DIR$/create-canton-data.py" afterPath="$PROJECT_DIR$/create-canton-data.py" />
       <change beforePath="$PROJECT_DIR$/data.js" afterPath="$PROJECT_DIR$/data.js" />
-      <change beforePath="$PROJECT_DIR$/options.html" afterPath="$PROJECT_DIR$/options.html" />
+      <change beforePath="$PROJECT_DIR$/data/cantonese/dict-backup.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/cantonese/dict.dat" afterPath="$PROJECT_DIR$/data/cantonese/dict.dat" />
+      <change beforePath="$PROJECT_DIR$/data/cantonese/final.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/data/cantonese/new-dict.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/merge-canton-dict.py" afterPath="$PROJECT_DIR$/merge-canton-dict.py" />
       <change beforePath="$PROJECT_DIR$/options.js" afterPath="$PROJECT_DIR$/options.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,72 +22,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="create-canton-data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create-canton-data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="99" column="53" lean-forward="false" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cperapera.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cperapera.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="50" />
-              <folding>
-                <marker date="1512548916730" expanded="true" signature="1780:1796" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge-canton-dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merge-canton-dict.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="final.dat" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/cantonese/final.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>的\t</find>
-      <find>集</find>
-      <find>indexofregex</find>
-      <find>openpyxl</find>
-      <find>workbook</find>
-      <find>wb</find>
-      <find>&quot;</find>
-      <find>雀</find>
-      <find>也</find>
-      <find>的</find>
-      <find>雀巢</find>
-      <find>\n於\t</find>
-      <find>奇</find>
-      <find>wordSearch</find>
-      <find>世界</find>
-      <find>trad</find>
-      <find>america</find>
-      <find>於</find>
-      <find>生晒</find>
       <find>條</find>
       <find>條\t</find>
       <find>日</find>
@@ -99,6 +37,25 @@
       <find>大學</find>
       <find>\n大學</find>
       <find>日本</find>
+      <find>生仔</find>
+      <find>蒨</find>
+      <find>龜孫子</find>
+      <find>宁</find>
+      <find>data</find>
+      <find>loadDictionary</find>
+      <find>xsearch</find>
+      <find>lastdialect</find>
+      <find>reloadsear</find>
+      <find>ppcContent</find>
+      <find>console.lo</find>
+      <find>ppcMain</find>
+      <find>this.dict</find>
+      <find>console.</find>
+      <find>config.diale</find>
+      <find>ppcmain</find>
+      <find>chrome.extension.getBackgroundPage().ppcMain.config.dialect = localStorage[&quot;dialect&quot;];</find>
+      <find>config</find>
+      <find>loaddiction</find>
     </findStrings>
     <replaceStrings>
       <replace>runtime.sendMessage</replace>
@@ -117,23 +74,23 @@
         <option value="$PROJECT_DIR$/data/dict-test.idx" />
         <option value="$PROJECT_DIR$/data/dict-final.idx" />
         <option value="$PROJECT_DIR$/convert.py" />
-        <option value="$PROJECT_DIR$/cperapera.js" />
-        <option value="$PROJECT_DIR$/cperacontent.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/options.html" />
-        <option value="$PROJECT_DIR$/background.js" />
-        <option value="$PROJECT_DIR$/options.js" />
         <option value="$PROJECT_DIR$/web-ext-artifacts/canttodict.py" />
         <option value="$PROJECT_DIR$/canttodict.py" />
         <option value="$PROJECT_DIR$/data/cantonese/new.dat" />
-        <option value="$PROJECT_DIR$/data.js" />
         <option value="$PROJECT_DIR$/data/cantonese/new-dict.dat" />
         <option value="$PROJECT_DIR$/data/cantonese/dict.dat" />
-        <option value="$PROJECT_DIR$/create-canton-data.py" />
         <option value="$PROJECT_DIR$/data/test.dat" />
-        <option value="$PROJECT_DIR$/merge-canton-dict.py" />
         <option value="$PROJECT_DIR$/data/cantonese/final.dat" />
+        <option value="$PROJECT_DIR$/merge-canton-dict.py" />
+        <option value="$PROJECT_DIR$/create-canton-data.py" />
+        <option value="$PROJECT_DIR$/cperapera.js" />
+        <option value="$PROJECT_DIR$/background.js" />
+        <option value="$PROJECT_DIR$/data.js" />
+        <option value="$PROJECT_DIR$/cperacontent.js" />
+        <option value="$PROJECT_DIR$/options.js" />
       </list>
     </option>
   </component>
@@ -249,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,13 +221,13 @@
             <path>
               <item name="chinese-chrome" type="b2602c69:ProjectViewProjectNode" />
               <item name="chinese-chrome" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="cantonese" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -282,14 +238,14 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/cantonese" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/cantonese" />
       <recent name="$PROJECT_DIR$/data/Cantonese-English Stardict" />
       <recent name="$PROJECT_DIR$/data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/cantonese" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +278,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -330,9 +285,10 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26755112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -342,7 +298,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -357,13 +312,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/convert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
@@ -385,7 +333,8 @@
         <state relative-caret-position="522">
           <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
           <folding>
-            <marker date="1512548916730" expanded="true" signature="1780:1796" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1513965651472" expanded="true" signature="1780:1796" ph="..." />
           </folding>
         </state>
       </provider>
@@ -410,8 +359,8 @@
         <state relative-caret-position="3942">
           <caret line="258" column="23" lean-forward="false" selection-start-line="258" selection-start-column="23" selection-end-line="258" selection-end-column="23" />
           <folding>
-            <marker date="1513876914644" expanded="true" signature="9784:9789" ph="..." />
-            <marker date="1513876914644" expanded="true" signature="9789:9794" ph="..." />
+            <marker date="1513966382574" expanded="true" signature="9696:9701" ph="..." />
+            <marker date="1513966382574" expanded="true" signature="9701:9706" ph="..." />
           </folding>
         </state>
       </provider>
@@ -451,7 +400,8 @@
         <state relative-caret-position="522">
           <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
           <folding>
-            <marker date="1512548916730" expanded="true" signature="1780:1796" ph="..." />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1513965651472" expanded="true" signature="1780:1796" ph="..." />
           </folding>
         </state>
       </provider>
@@ -518,21 +468,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canttodict.py" />
-    <entry file="file://$PROJECT_DIR$/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/cedict.idx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cantonese/cedict.idx" />
     <entry file="file://$PROJECT_DIR$/options.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -541,39 +477,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cperacontent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="617" column="48" lean-forward="false" selection-start-line="617" selection-start-column="48" selection-end-line="617" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-version-2.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-version-1.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4243">
-          <caret line="10932" column="3" lean-forward="false" selection-start-line="10932" selection-start-column="1" selection-end-line="10932" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/new-dict.dat">
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-version-2.dat" />
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-version-1.dat" />
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="60276" column="0" lean-forward="false" selection-start-line="60276" selection-start-column="0" selection-end-line="60276" selection-end-column="0" />
@@ -581,7 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/dict.dat">
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-old.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
@@ -589,26 +495,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/old-dict.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cantonese/old-dict.dat" />
     <entry file="file://$PROJECT_DIR$/data/dict.idx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="3774" column="0" lean-forward="true" selection-start-line="3774" selection-start-column="0" selection-end-line="3774" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/new-dict.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -621,22 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="178" column="71" lean-forward="true" selection-start-line="178" selection-start-column="56" selection-end-line="178" selection-end-column="71" />
-          <folding>
-            <marker date="1513876914644" expanded="true" signature="9784:9789" ph="..." />
-            <marker date="1513876914644" expanded="true" signature="9789:9794" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,33 +527,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create-canton-data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="99" column="53" lean-forward="false" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cperapera.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <marker date="1512548916730" expanded="true" signature="1780:1796" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dict.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="24893" column="0" lean-forward="true" selection-start-line="24890" selection-start-column="0" selection-end-line="24893" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.dat">
+    <entry file="file://$PROJECT_DIR$/data/test.dat" />
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-backup.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -682,15 +536,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/dict.dat">
+    <entry file="file://$PROJECT_DIR$/data/dict.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="220">
+          <caret line="24893" column="0" lean-forward="false" selection-start-line="24890" selection-start-column="0" selection-end-line="24893" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-backup.dat">
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict-old.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="66833" column="1" lean-forward="false" selection-start-line="66833" selection-start-column="0" selection-end-line="66833" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cantonese/final-backup.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cantonese/final.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="2921" column="78" lean-forward="false" selection-start-line="2921" selection-start-column="77" selection-end-line="2921" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cantonese/dict.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -700,17 +578,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/merge-canton-dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="181">
+          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cantonese/final.dat">
+    <entry file="file://$PROJECT_DIR$/create-canton-data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="505">
+          <caret line="151" column="3" lean-forward="false" selection-start-line="151" selection-start-column="3" selection-end-line="151" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="245" column="30" lean-forward="false" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="30" />
+          <folding>
+            <marker date="1513966382574" expanded="true" signature="9696:9701" ph="..." />
+            <marker date="1513966382574" expanded="true" signature="9701:9706" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cperacontent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="540" column="0" lean-forward="true" selection-start-line="540" selection-start-column="0" selection-end-line="540" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cperapera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1513965651472" expanded="true" signature="1780:1796" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

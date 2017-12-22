@@ -131,6 +131,7 @@ ppcDict.prototype = {
     },
 
     wordSearch: function (word) {
+
         // The cantonese and mandarin word search is different because there is no index file needed
         if (ppcMain.config.dialect === 'mandarin') {
 
@@ -164,7 +165,6 @@ ppcDict.prototype = {
                 entryobj.data.push([rawentries[i], null]);
             }
 
-            console.log(entryobj); // TODO Remove
             return entryobj;
         }
 
@@ -281,15 +281,11 @@ ppcDict.prototype = {
                     k += '<span class="w-hanzi3">' + hanzi + '</span>';
             }
 
-            console.log('before', k);
-
             //PINYIN
             k += '&#32;&#32; <span class="w-kana">';
             if ("tonenums" == ppcMain.config.pinyin) k += pinyin.tonenums + '</span>';
             else if ("zhuyin" == ppcMain.config.pinyin) k += pinyin.zhuyin + '</span>';
             else k += pinyin.tonemarks + '</span>';
-
-            console.log('after', k);
 
             b.push(k);
 

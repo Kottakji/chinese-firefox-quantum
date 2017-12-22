@@ -141,11 +141,12 @@ for url in urls:
     get_cantonese_words_from_url(url)
 
 """
-
+"""
 # STEP 3: Merge the files
-read_files = ['data/cantonese/new-dict.dat', 'data/cantonese/old-dict.dat']
+read_files = ['data/cantonese/dict-old.dat', 'data/cantonese/final.dat']
 
-with open('data/cantonese/final.dat', 'wb') as final:
+with open('data/cantonese/new-dict.dat', 'wb') as final:
     for f in read_files:
         with open(f, 'rb') as read_file:
             final.write(read_file.read())
+"""

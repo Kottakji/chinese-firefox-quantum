@@ -46,6 +46,7 @@ var ppcContent = {
     selEndList: [],
     lastSelEnd: [],
     lastRo: 0,
+    lastDialect: 'mandarin',
 
     //Adds the listeners and stuff.
     enableTab: function () {
