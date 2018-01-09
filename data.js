@@ -245,7 +245,9 @@ ppcDict.prototype = {
             // Cantonese is always traditional, so can't be both
             if (ppcMain.config.dialect === 'mandarin' && ("botht" == ppcMain.config.showhanzi || "boths" == ppcMain.config.showhanzi)) {
                 var first = ppcMain.config.showhanzi == "botht" ? trad : simp;
+                var firstlang = ppcMain.config.showhanzi == "botht" ? 'lang="zh-Hant" ' : 'lang="zh-Hans" ';
                 var second = ppcMain.config.showhanzi == "botht" ? simp : trad;
+                var secondlang = ppcMain.config.showhanzi == "botht" ? 'lang="zh-Hans" ' : 'lang="zh-Hant" ';
                 //add the repetition dot if trad == simp
                 var newsecond = [];
                 for (j = 0; j < first.length; j++) {
@@ -258,31 +260,34 @@ ppcDict.prototype = {
 
                 if (ppcMain.config.docolors == "yes") {
                     for (j = 0; j < pinyin.tones.length; j++)
-                        k += '<span class="w-hanzi' + pinyin.tones[j] + '">' + first[j] + '</span>';
+                        k += '<span ' + firstlang + 'class="w-hanzi' + pinyin.tones[j] + '">' + first[j] + '</span>';
                     k += '　';
                     for (j = 0; j < pinyin.tones.length; j++)
-                        k += '<span class="w-hanzi' + pinyin.tones[j] + '">' + second[j] + '</span>';
+                        k += '<span ' + secondlang + 'class="w-hanzi' + pinyin.tones[j] + '">' + second[j] + '</span>';
                 }
                 else
-                    k += '<span class="w-hanzi3">' + first + '</span>　<span class="w-hanzi3">' + second + '</span>';
+                    k += '<span ' + firstlang + 'class="w-hanzi3">' + first + '</span>　<span ' + secondlang + 'class="w-hanzi3">' + second + '</span>';
             }
             else {
                 if (ppcMain.config.dialect === 'cantonese') {
                     // Cantonese is always traditional
                     var hanzi = trad;
+                    // Actually, the IANA tag for Cantonese is 'yue', but this does not seem to select the correct font.
+                    var lang = 'lang="zh-HK" ';
                 } else {
                     var hanzi = ppcMain.config.showhanzi == "simp" ? simp : trad;
+                    var lang = ppcMain.config.showhanzi == "simp" ? 'lang="zh-Hans" ' : 'lang="zh-Hant" ';
                 }
                 if (ppcMain.config.dialect !== 'cantonese' && ppcMain.config.docolors == "yes")
                     for (j = 0; j < pinyin.tones.length; j++) {
-                        k += '<span class="w-hanzi' + pinyin.tones[j] + '">' + hanzi[j] + '</span>';
+                        k += '<span ' + lang + 'class="w-hanzi' + pinyin.tones[j] + '">' + hanzi[j] + '</span>';
                     }
                 else
-                    k += '<span class="w-hanzi3">' + hanzi + '</span>';
+                    k += '<span ' + lang + 'class="w-hanzi3">' + hanzi + '</span>';
             }
 
             //PINYIN
-            k += '&#32;&#32; <span class="w-kana">';
+            k += '&#32;&#32; <span lang="zh" class="w-kana">';
             if ("tonenums" == ppcMain.config.pinyin) k += pinyin.tonenums + '</span>';
             else if ("zhuyin" == ppcMain.config.pinyin) k += pinyin.zhuyin + '</span>';
             else k += pinyin.tonemarks + '</span>';
