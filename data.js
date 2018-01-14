@@ -344,6 +344,13 @@ ppcDict.prototype = {
     },
 
     parsePinyin: function (pinyin) {
+
+        // In case of Cantonese
+        if (ppcMain.config.dialect === 'cantonese') {
+
+            return this.parseCantonesePinyin(pinyin);
+        }
+
         //pinyin info
         var _a = ["\u0101", "\u00E1", "\u01CE", "\u00E0", "a"];
         var _e = ["\u0113", "\u00E9", "\u011B", "\u00E8", "e"];
@@ -407,6 +414,42 @@ ppcDict.prototype = {
         result.tonemarks = pinyin.join(" ");
         result.zhuyin = zhuyin.join(" ");
         result.tonenums = tonenums.join(" ");
+        return result;
+    },
+
+    parseCantonesePinyin(pinyin) {
+
+        // Cantonese info
+        let cantonese = {
+            'a': ["\u0101", "\u00E1", "a", "a\u030F", "a\u030B", "a\u0331"],
+            'e': ["\u0113", "\u00E9", "e", "e\u030F", "e\u030B", "e\u0331"],
+            'i': ["\u012B", "\u00ED", "i", "i\u030F", "i\u030B", "i\u0331"],
+            'o': ["\u014D", "\u00F3", "o", "o\u030F", "o\u030B", "o\u0331"],
+            'u': ["\u016B", "\u00FA", "u", "u\u030F", "u\u030B", "u\u0331"],
+            'v': ["\u01D6", "\u01D8", "v", "v\u030F", "v\u030B", "v\u0331"],
+            'm': ["m\u0304", "\u1E3F", "m", "m\u030F", "m\u030B", "m\u0331"],
+        };
+
+        let tonemarks = [];
+        let zhuyin = [];
+        let tonenums = [];
+
+        for (let word of pinyin.split(" ")) {
+            let tone = word.slice(-1);
+            if (['1', '2', '3', '4', '5', '6'].includes(tone)) {
+                for (let char in cantonese) {
+                    if (word.includes(char)) {
+                        tonemarks.push(word.slice(0, -1).replace(char, cantonese[char][tone - 1]));  // Cut off the tone
+                        zhuyin.push(''); // Not sure what the use is, but the old version uses this...
+                        tonenums.push(tone);
+                        break;
+                    }
+                }
+            }
+        }
+
+        let result = {'tonemarks': tonemarks.join(' '), 'zhuyin':zhuyin.join(' '), 'tonenums':tonenums.join(' ')};
+
         return result;
     },
 };
