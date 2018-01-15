@@ -780,7 +780,7 @@ var ppcContent = {
         }
 
     }
-}
+};
 
 //Event Listeners
 chrome.runtime.onMessage.addListener(
@@ -807,7 +807,29 @@ chrome.runtime.onMessage.addListener(
 
 // When a page first loads, checks to see if it should enable script
 try {
-    chrome.runtime.sendMessage({"type": "enable?"});
+
+    let promise = chrome.runtime.sendMessage({"type": "enable?"});
+    promise.then(function(toggleKey) {
+        let toggleKeyArray = toggleKey.split('+');
+
+        let keys = [];
+        document.addEventListener('keydown', (event) => {
+
+            keys.push(event.key.charAt(0).toUpperCase() + event.key.slice(1)); // Capitalize first letter
+
+            // We select the amount of keys we need and check on those
+            if (keys.length > toggleKeyArray.length) {
+                keys.shift();
+            }
+
+            if (keys.join('+') === toggleKey) {
+                chrome.runtime.sendMessage({'type': 'enable-via-hotkey'});
+            }
+        })
+
+    });
+
 } catch (error) {
     console.log(error);
 }
+

@@ -42,9 +42,12 @@ function onLoaded() {
         store = localStorage['docolors'];
         if (store == 'yes') {
             document.optform.docolors[0].selected = true;
-        }
-        else
+        } else {
             document.optform.docolors[1].selected = true;
+        }
+
+        store = localStorage['toggleKey'];
+        document.optform.toggleKey.value = store;
     }
 
     function getVals() {
@@ -54,6 +57,7 @@ function onLoaded() {
         localStorage['docolors'] = document.optform.docolors.value;
         localStorage['showhanzi'] = document.optform.showhanzi.value;
         localStorage['dialect'] = document.optform.dialect.value;
+        localStorage['toggleKey'] = document.optform.toggleKey.value;
 
         chrome.extension.getBackgroundPage().ppcMain.config.css = localStorage["popupcolor"];
         chrome.extension.getBackgroundPage().ppcMain.config.highlight = localStorage["highlight"];
@@ -61,6 +65,7 @@ function onLoaded() {
         chrome.extension.getBackgroundPage().ppcMain.config.docolors = localStorage["docolors"];
         chrome.extension.getBackgroundPage().ppcMain.config.showhanzi = localStorage["showhanzi"];
         chrome.extension.getBackgroundPage().ppcMain.config.dialect = localStorage["dialect"];
+        chrome.extension.getBackgroundPage().ppcMain.config.toggleKey = localStorage["toggleKey"];
     }
 
     document.getElementById('optform').onsubmit = function (e) {

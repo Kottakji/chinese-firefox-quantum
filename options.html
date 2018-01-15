@@ -37,7 +37,7 @@
                             <option value="no">No</option>
                         </select>
                         <br/>
-                        Dialect
+                        Dialect:
                         <select id="dialect" name="dialect">
                             <option value="mandarin">Mandarin</option>
                             <option value="cantonese">Cantonese</option>
@@ -50,9 +50,14 @@
                             <option value="trad">Traditional</option>
                             <option value="boths">Simp, Trad</option>
                             <option value="botht">Trad, Simp</option>
-
                         </select>
                     </div>
+                    <div id="toggleKey-div">
+                        Toggle On/Off key:
+                        <input id="toggleKey" type="text" pattern="([\w\d]+?\+)+[\w\d]+?"
+                               title="Please input the keys seperated by a + sign. For example Shift+Alt+P">
+                    </div>
+                    <br>
                     </p>
                     <p><input type="submit" value="Submit"/></p>
                 </div>

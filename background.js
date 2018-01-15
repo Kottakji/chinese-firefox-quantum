@@ -6,6 +6,11 @@ chrome.runtime.onMessage.addListener(
 			case 'enable?':
 				console.log('enable?');
 				ppcMain.onTabSelect(sender.tab.id);
+				response(ppcMain.config.toggleKey);
+				break;
+			case 'enable-via-hotkey':
+				ppcMain.inlineToggle();
+				ppcMain.onTabSelect(sender.tab.id);
 				break;
 			case 'xsearch':
 				var e = ppcMain.search(request.text, request.showmode);
@@ -38,6 +43,7 @@ if(initStorage("v0.9", true)) {
 	initStorage("showhanzi", "boths");
 	initStorage("pinyin", "tonemarks");
 	initStorage("dialect", "mandarin");
+	initStorage("toggleKey", "Shift+P");
 
 	// v0.8
 	// No changes to options
@@ -68,3 +74,4 @@ ppcMain.config.showhanzi = localStorage["showhanzi"];
 ppcMain.config.docolors = localStorage["docolors"];
 ppcMain.config.pinyin = localStorage["pinyin"];
 ppcMain.config.dialect = localStorage["dialect"];
+ppcMain.config.toggleKey = localStorage["toggleKey"];

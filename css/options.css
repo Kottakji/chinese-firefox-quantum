@@ -30,11 +30,15 @@
 	clear: both;
 	background-color: #C9E8FF;
 	padding: 10px;
-	max-width: 300px;
+	max-width: 400px;
 	border: 1px solid black;
 }
 
 #options p, #options form {
 	margin: 0;
 	paddign: 0;
+}
+
+#toggleKey {
+	width: 130px;
 }

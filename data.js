@@ -278,12 +278,14 @@ ppcDict.prototype = {
                     var hanzi = ppcMain.config.showhanzi == "simp" ? simp : trad;
                     var lang = ppcMain.config.showhanzi == "simp" ? 'lang="zh-Hans" ' : 'lang="zh-Hant" ';
                 }
-                if (ppcMain.config.dialect !== 'cantonese' && ppcMain.config.docolors == "yes")
-                    for (j = 0; j < pinyin.tones.length; j++) {
+                if (ppcMain.config.docolors == "yes") {
+                    // Check on the hanzi length, because cantonese definitions might have 1 char with many different tones in pinyin
+                    for (j = 0; j < hanzi.length; j++) {
                         k += '<span ' + lang + 'class="w-hanzi' + pinyin.tones[j] + '">' + hanzi[j] + '</span>';
                     }
-                else
+                } else {
                     k += '<span ' + lang + 'class="w-hanzi3">' + hanzi + '</span>';
+                }
             }
 
             //PINYIN
@@ -433,6 +435,7 @@ ppcDict.prototype = {
         let tonemarks = [];
         let zhuyin = [];
         let tonenums = [];
+        let tones = [];
 
         for (let word of pinyin.split(" ")) {
             let tone = word.slice(-1);
@@ -442,13 +445,16 @@ ppcDict.prototype = {
                         tonemarks.push(word.slice(0, -1).replace(char, cantonese[char][tone - 1]));  // Cut off the tone
                         zhuyin.push(''); // Not sure what the use is, but the old version uses this...
                         tonenums.push(tone);
+                        tones.push(tone);
                         break;
                     }
                 }
             }
         }
 
-        let result = {'tonemarks': tonemarks.join(' '), 'zhuyin':zhuyin.join(' '), 'tonenums':tonenums.join(' ')};
+        let result = {
+            'tonemarks': tonemarks.join(' '), 'zhuyin':zhuyin.join(' '), 'tonenums':tonenums.join(' '), 'tones': tones
+        };
 
         return result;
     },
