@@ -147,8 +147,15 @@ ppcDict.prototype = {
 
                 for (i = 0; i < hits.length; i++) {
 
-                    var end = this.wordDict.indexOf("\n", hits[i]);
-                    var entryline = this.wordDict.substr(hits[i], end - (hits[i]));
+                    let end = this.wordDict.indexOf("\n", hits[i]);
+                    let entryline;
+                    if (end === hits[i]) {
+                        // In case the end is the same as hits[i], the index starts on the \n
+                        end = this.wordDict.indexOf("\n", hits[i] + 1);
+                        entryline = this.wordDict.substr(hits[i] + 1, end - (hits[i]));
+                    } else {
+                        entryline = this.wordDict.substr(hits[i], end - (hits[i]));
+                    }
 
                     rawentries.push(entryline);
                 }
