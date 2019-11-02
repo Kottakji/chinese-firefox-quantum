@@ -4,7 +4,6 @@ chrome.runtime.onMessage.addListener(
 	function(request, sender, response) {
 		switch(request.type) {
 			case 'enable?':
-				console.log('enable?');
 				ppcMain.onTabSelect(sender.tab.id);
 				response(ppcMain.config.toggleKey);
 				break;

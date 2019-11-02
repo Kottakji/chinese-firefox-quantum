@@ -661,13 +661,7 @@ var ppcContent = {
             var ro = range.startOffset;
         }
 
-        /*   		console.log( "offset: " + ro + " parentContainer: " +  rp.nodeName +
-                    " total size: " + (rp.data?rp.data.length:"") + " target: " + ev.target.nodeName +
-                    " parentparent: " + rp.parentNode.nodeName); */
-
-
         if (ev.target == tdata.prevTarget) {
-            //console.log("exit due to same target");
             if (tdata.title) return;
             if ((rp == tdata.prevRangeNode) && (ro == tdata.prevRangeOfs)) return;
         }
@@ -789,14 +783,11 @@ chrome.runtime.onMessage.addListener(
             case 'enable':
                 ppcContent.enableTab();
                 window.cperapera.config = request.config;
-                console.log("enable");
                 break;
             case 'disable':
                 ppcContent.disableTab();
-                console.log("disable");
                 break;
             case 'showPopup':
-                console.log("showPopup");
                 ppcContent.showPopup(request.text);
                 break;
             default:

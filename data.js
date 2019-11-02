@@ -84,18 +84,10 @@ ppcDict.prototype = {
         this.wordIndex = this.fileRead(chrome.extension.getURL("data/dict.idx"));
     },
 
-    getUniqueArray: function (arr) {
-        var a = [];
-        var l = arr.length;
-        for (var i = 0; i < l; i++) {
-            for (var j = i + 1; j < l; j++) {
-                // If this[i] is found later in the array
-                if (arr[i] === arr[j])
-                    j = ++i;
-            }
-            a.push(arr[i]);
-        }
-        return a;
+    getUniqueArray: function (values) {
+      return values.filter((value, index, self) => {
+          return self.indexOf(value) === index;
+      });
     },
 
     indexSearch: function (book, word) {
@@ -131,7 +123,6 @@ ppcDict.prototype = {
     },
 
     wordSearch: function (word) {
-
         // The cantonese and mandarin word search is different because there is no index file needed
         if (ppcMain.config.dialect === 'mandarin') {
 
@@ -148,13 +139,13 @@ ppcDict.prototype = {
                 for (i = 0; i < hits.length; i++) {
 
                     let end = this.wordDict.indexOf("\n", hits[i]);
-                    let entryline;
-                    if (end === hits[i]) {
-                        // In case the end is the same as hits[i], the index starts on the \n
-                        end = this.wordDict.indexOf("\n", hits[i] + 1);
-                        entryline = this.wordDict.substr(hits[i] + 1, end - (hits[i]));
-                    } else {
-                        entryline = this.wordDict.substr(hits[i], end - (hits[i]));
+                    let end2 = this.wordDict.indexOf("\n", end + 1);
+                    let entryline = this.wordDict.substr(hits[i], end - (hits[i])).trim();
+
+                    // See https://github.com/JorisKok/chinese-firefox-quantum/issues/5
+                    // Sometimes the hits[] index is a few places off (too early)
+                    if (! entryline.includes(word)) {
+                        entryline = this.wordDict.substr(end + 1, end2 - end).trim();
                     }
 
                     rawentries.push(entryline);
