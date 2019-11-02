@@ -4,7 +4,7 @@ https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext
 
 ### Test
 
-`web-ext run`
+`web-ext run --verbose`
 
 
 ### Publish
