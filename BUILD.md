@@ -9,4 +9,4 @@ https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext
 
 ### Publish
 
-`web-ext -i commands/* build`
+`web-ext build -i commands/*`
