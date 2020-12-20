@@ -96,6 +96,11 @@
 	color: #777777;
 }
 
+#cperapera-window .w-hanzi6 {
+	font-size: 18px;
+	color: #CCCCCC;
+}
+
 #cperapera-window .w-kana {
 	font-size: 16px;
 	margin-left: 0.7em;
