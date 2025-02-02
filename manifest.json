@@ -39,7 +39,7 @@
         "http://*/*",
         "storage"
     ],
-    "version": "2.1.6",
+    "version": "2.1.7",
     "web_accessible_resources": [
         "css/*",
         "cperacontent.js",
