@@ -652,11 +652,17 @@ var ppcContent = {
 
         if (document.caretPositionFromPoint) {
             var range = document.caretPositionFromPoint(ev.clientX, ev.clientY);
+            if (range === null) {
+                return;
+            }
             var rp = range.offsetNode;
             var ro = range.offset;
 
         } else if (document.caretRangeFromPoint) {
             var range = document.caretRangeFromPoint(ev.clientX, ev.clientY);
+            if (range === null) {
+                return;
+            }
             var rp = range.startContainer;
             var ro = range.startOffset;
         }
